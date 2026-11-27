@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumora Cosméticos</title>
+  <meta name="description" content="Lumora Cosméticos: cuidado botânico e vegano para todo tipo de pele. Embalagens 100% recicladas.">
+  <meta property="og:title" content="Lumora Cosméticos">
+  <meta property="og:description" content="Cuidado botânico e vegano para todo tipo de pele.">
+  <meta property="og:image" content="img/locao-fluida-multicamadas.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#EE9AC6">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display&family=Great+Vibes&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Cabeçalho ===== -->
+  <header class="topo">
+    <div class="topo__inner">
+      <a href="#inicio" class="logo" aria-label="Lumora Cosméticos, início">Lumora</a>
+      <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="menu">
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#investir">Investir</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section id="inicio" class="hero">
+      <div class="hero__texto">
+        <h1 class="hero__logo">Lumora</h1>
+        <p class="hero__sub">COSMÉTICOS</p>
+        <p class="hero__slogan">Cuidado botânico e vegano para todo tipo de pele.</p>
+        <div class="hero__acoes">
+          <a href="#produtos" class="btn">Ver produtos</a>
+          <a href="#investir" class="btn btn--linha">Por que investir</a>
+        </div>
+      </div>
+      <div class="hero__fotos" aria-hidden="true">
+        <div class="blob blob--a"><img src="img/locao-fluida-multicamadas.jpg" alt=""></div>
+        <div class="blob blob--b"><img src="img/creme-calmante-neuro.jpg" alt=""></div>
+        <span class="xadrez xadrez--a"></span>
+        <span class="xadrez xadrez--b"></span>
+      </div>
+    </section>
+
+    <!-- ===== Diferenciais ===== -->
+    <section id="diferenciais" class="secao diferenciais">
+      <span class="deco deco--halftone-esq" aria-hidden="true"></span>
+      <span class="deco deco--grade" aria-hidden="true"></span>
+      <div class="container diferenciais__grid">
+        <h2 class="titulo-caps">Diferenciais da empresa</h2>
+        <ol class="cards-num">
+          <li class="revelar"><span class="num">1</span><strong>Produtos veganos</strong><p>Nenhum ingrediente de origem animal e nenhum teste em animais.</p></li>
+          <li class="revelar"><span class="num">2</span><strong>Embalagens 100% recicladas</strong><p>Menos plástico novo no planeta, com o mesmo cuidado no visual.</p></li>
+          <li class="revelar"><span class="num">3</span><strong>Produtos para todo tipo de pele</strong><p>Normal, oleosa, mista, seca e sensível: tem Lumora para cada uma.</p></li>
+          <li class="revelar"><span class="num">4</span><strong>Tratamento especial</strong><p>Ativos botânicos escolhidos para as necessidades de cada pele.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Produtos ===== -->
+    <section id="produtos" class="secao produtos">
+      <div class="container">
+        <h2 class="titulo-caps titulo-caps--centro">Nossos produtos</h2>
+        <p class="produtos__intro">Três linhas, do cuidado diário ao tratamento intensivo. Filtre pelo seu tipo de pele:</p>
+
+        <div class="filtro" role="group" aria-label="Filtrar por tipo de pele">
+          <button class="filtro__btn ativo" data-pele="todos">Todos</button>
+          <button class="filtro__btn" data-pele="normal">Normal</button>
+          <button class="filtro__btn" data-pele="oleosa">Oleosa</button>
+          <button class="filtro__btn" data-pele="mista">Mista</button>
+          <button class="filtro__btn" data-pele="seca">Seca</button>
+          <button class="filtro__btn" data-pele="sensivel">Sensível</button>
+        </div>
+        <p class="filtro__vazio" hidden>Nenhum produto desta linha para esse tipo de pele.</p>
+
+        <!-- Linha essential -->
+        <div class="linha" data-linha>
+          <h3 class="linha__titulo">Linha essential</h3>
+          <div class="grade-produtos">
+            <article class="produto revelar" data-pele="normal">
+              <div class="produto__foto"><img src="img/locao-suave-botanica.jpg" alt="Frasco rosa da Loção Suave Botânica Lumora, 200 ml" loading="lazy"></div>
+              <span class="tag">Pele normal</span>
+              <h4>Loção Leve Botânica</h4>
+              <p class="preco">R$ 39,90</p>
+              <p>Hidratação fluida com D-pantenol biossintético e glicerina 100% de palma sustentável.</p>
+            </article>
+            <article class="produto revelar" data-pele="oleosa">
+              <div class="produto__foto"><img src="img/gel-matificante-botanico.jpg" alt="Bisnaga do Gel Matificante Botânico Lumora com folhas de chá verde, 50 g" loading="lazy"></div>
+              <span class="tag">Pele oleosa</span>
+              <h4>Gel Matificante Botânico</h4>
+              <p class="preco">R$ 44,90</p>
+              <p>Base aquosa pura com Zinco PCA fermentativo e extrato de chá verde orgânico.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Linha advanced -->
+        <div class="linha" data-linha>
+          <h3 class="linha__titulo">Linha advanced</h3>
+          <div class="grade-produtos">
+            <article class="produto revelar" data-pele="oleosa">
+              <div class="produto__foto"><img src="img/aquagel-prebiotico.jpg" alt="Bisnaga do Aquagel Prebiótico de Frutas Vermelhas com morangos e framboesas, 100 g" loading="lazy"></div>
+              <span class="tag">Pele oleosa</span>
+              <h4>Aquagel Prebiótico de Frutas Vermelhas</h4>
+              <p class="preco">R$ 69,90</p>
+              <p>Textura ultraleve, com niacinamida pura e prebióticos de chicória.</p>
+            </article>
+            <article class="produto revelar" data-pele="mista">
+              <div class="produto__foto"><img src="img/gel-creme-balanceador.jpg" alt="Bisnaga branca e rosa do Gel-Creme Balanceador de Flora, 50 g" loading="lazy"></div>
+              <span class="tag">Pele mista</span>
+              <h4>Gel-Creme Balanceador de Flora</h4>
+              <p class="preco">R$ 74,90</p>
+              <p>Equilibra a oleosidade da zona T e nutre áreas secas com esqualano da cana-de-açúcar.</p>
+            </article>
+            <article class="produto revelar" data-pele="mista">
+              <div class="produto__foto"><img src="img/locao-fluida-multicamadas.jpg" alt="Frasco com válvula da Loção Fluida Multicamadas Lumora, 200 ml" loading="lazy"></div>
+              <span class="tag">Pele mista</span>
+              <h4>Loção Fluida Multicamadas</h4>
+              <p class="preco">R$ 74,90</p>
+              <p>Ácido hialurônico vegano fracionado (obtido por fermentação de leveduras).</p>
+            </article>
+            <article class="produto revelar" data-pele="sensivel">
+              <div class="produto__foto"><img src="img/locao-calmante.jpg" alt="Frasco com válvula da Loção Calmante Hipoalergênica, 200 ml, com flor rosa" loading="lazy"></div>
+              <span class="tag">Pele sensível</span>
+              <h4>Loção Calmante Hipoalergênica</h4>
+              <p class="preco">R$ 79,90</p>
+              <p>Beta-glucana de aveia e extrato concentrado de camomila orgânica, sem perfume.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Linha high performance -->
+        <div class="linha" data-linha>
+          <h3 class="linha__titulo">Linha high performance</h3>
+          <div class="grade-produtos">
+            <article class="produto revelar" data-pele="seca">
+              <div class="produto__foto"><img src="img/balsamo-reconstrutor.jpg" alt="Pote aberto do Bálsamo Reconstrutor Lipídico Vegetal" loading="lazy"></div>
+              <span class="tag">Pele seca</span>
+              <h4>Bálsamo Reconstrutor Lipídico Vegetal</h4>
+              <p class="preco">R$ 109,90</p>
+              <p>Nutrição intensa, reparação profunda e barreira fortalecida.</p>
+            </article>
+            <article class="produto revelar" data-pele="seca">
+              <div class="produto__foto"><img src="img/creme-multilamelar.jpg" alt="Pote em formato de gota do Creme Denso Multilamelar Botânico, 50 g" loading="lazy"></div>
+              <span class="tag">Pele seca</span>
+              <h4>Creme Denso Multilamelar Botânico</h4>
+              <p class="preco">R$ 99,90</p>
+              <p>Hidratação profunda e barreira fortalecida com ativos botânicos, em textura rica e cremosa.</p>
+            </article>
+            <article class="produto revelar" data-pele="sensivel">
+              <div class="produto__foto"><img src="img/creme-calmante-neuro.jpg" alt="Pote do Creme Calmante Neurocosmético Lumora, 50 g" loading="lazy"></div>
+              <span class="tag">Pele sensível</span>
+              <h4>Creme Calmante Neurocosmético Botânico</h4>
+              <p class="preco">R$ 109,90</p>
+              <p>Acalma, hidrata e fortalece com ativos neurocalmantes.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Em breve -->
+        <div class="em-breve revelar">
+          <div class="em-breve__foto"><img src="img/serum-facial.jpg" alt="Frasco conta-gotas rosa do Sérum Facial Hidratante, 30 ml" loading="lazy"></div>
+          <div class="em-breve__texto">
+            <span class="selo">Em breve</span>
+            <h3>Sérum Facial Hidratante</h3>
+            <p>Ácido hialurônico, niacinamida e pantenol em 30 ml, para todos os tipos de pele. Hidrata, uniformiza o tom e fortalece a barreira cutânea.</p>
+            <p class="em-breve__nota">Lançamento futuro. Preço a definir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Por que investir ===== -->
+    <section id="investir" class="secao investir">
+      <span class="deco deco--arcos" aria-hidden="true"></span>
+      <span class="deco deco--halftone-dir" aria-hidden="true"></span>
+      <div class="container">
+        <h2 class="titulo-caps titulo-caps--centro">Por que investir na nossa empresa?</h2>
+
+        <ul class="numeros">
+          <li class="revelar"><strong>9</strong><span>produtos à venda</span></li>
+          <li class="revelar"><strong>3</strong><span>linhas de preço</span></li>
+          <li class="revelar"><strong>5</strong><span>tipos de pele atendidos</span></li>
+          <li class="revelar"><strong>100%</strong><span>vegano e reciclado</span></li>
+        </ul>
+
+        <div class="motivos">
+          <article class="motivo revelar">
+            <h3>Preço para cada bolso</h3>
+            <p>Os produtos vão de <b>R$ 39,90</b> (Linha essential) a <b>R$ 109,90</b> (Linha high performance), com preço médio de <b>R$ 78,23</b>. O cliente começa pela linha de entrada e pode subir de linha depois.</p>
+          </article>
+          <article class="motivo revelar">
+            <h3>Público amplo</h3>
+            <p>Há fórmulas para pele normal, oleosa, mista, seca e sensível. Quanto mais tipos de pele atendemos, mais pessoas podem comprar Lumora.</p>
+          </article>
+          <article class="motivo revelar">
+            <h3>Sustentável e vegana</h3>
+            <p>Embalagens 100% recicladas e produtos veganos atendem consumidores que querem comprar de marcas responsáveis, e isso fortalece a reputação da empresa.</p>
+          </article>
+          <article class="motivo revelar">
+            <h3>Produção própria e novidades</h3>
+            <p>Com fábrica própria, controlamos a qualidade e os custos. O próximo lançamento, o Sérum Facial Hidratante, já está no forno.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer id="contato" class="rodape">
+    <span class="deco deco--creme-rosa" aria-hidden="true"></span>
+    <span class="deco deco--creme-dourado" aria-hidden="true"></span>
+    <div class="container rodape__inner">
+      <p class="rodape__obrigada">Obrigada<br>pela<br>atenção!</p>
+      <p class="logo logo--rodape">Lumora</p>
+      <p class="rodape__info">Projeto escolar de Educação Financeira, por Fernanda Prates, 8°B.<br>Empresa e produtos fictícios.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
